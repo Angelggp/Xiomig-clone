@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Animación fade-in para el hero */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación fade-out */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-fade-in.is-visible {
+  opacity: 1;
+}
+
+.animate-fade-in.is-hidden {
+  opacity: 0;
+}
+
+.animate-fade-out {
+  animation: fadeOut 0.8s ease-out forwards;
+}
+
+/* Estilos adicionales para la app */
+.app {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Navbar fijo mejorado */
+nav {
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/* Opcional: Mejorar la performance de las animaciones */
+.animate-fade-in,
+.animate-fade-out,
+.hover\:scale-105:hover,
+.hover\:scale-110:hover {
+  will-change: transform;
+}
+
+/* Asegurar que el fondo fixed funcione correctamente en móviles */
+@media (max-width: 768px) {
+  .fixed {
+    position: fixed;
+  }
+}

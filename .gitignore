@@ -1,0 +1,45 @@
+# ====================
+# Logs
+# ====================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ====================
+# Frontend: xiomig_clone (React)
+# ====================
+/xiomig_clone/node_modules/
+/xiomig_clone/dist/
+/xiomig_clone/dist-ssr/
+/xiomig_clone/*.local
+/xiomig_clone/.env
+/xiomig_clone/.env.*.local
+
+# ====================
+# Backend: xiomig_backend (Django)
+# ====================
+# Python bytecode
+/xiomig_backend/__pycache__/
+/xiomig_backend/*.py[cod]
+/xiomig_backend/*$py.class
+
+# Virtual environments
+/xiomig_backend/venv/
+/xiomig_backend/env/
+/xiomig_backend/.venv/
+/xiomig_backend/.env
+
+# Django files
+/xiomig_backend/*.log
+/xiomig_backend/db.sqlite3
+/xiomig_backend/media/
+
+
+# Coverage / test files
+/xiomig_backend/htmlcov/
+/xiomig_backend/.coverage
+/xiomig_backend/.pytest_cache/
