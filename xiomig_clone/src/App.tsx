@@ -1,5 +1,5 @@
 import { QueryProvider } from "./providers/QueryProvider";
-import Layout from "./components/layout";
+import Layout from "./components/Layout";
 
 function App() {
   return (
