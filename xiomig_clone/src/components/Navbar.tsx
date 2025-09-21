@@ -9,7 +9,7 @@ const NavBar = () => {
   const toggleLang = () => setLang(lang === "ES" ? "EN" : "ES");
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 lg:mt-0 md:mt-4 mt-4">
+    <div className="fixed top-0 left-0 right-0 z-50 mt-4 lg:mt-0">
       <nav
         className="
   bg-white/40 shadow-md rounded-full border border-white/20

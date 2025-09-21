@@ -7,7 +7,6 @@ const Departments: React.FC = () => {
   const { data: departments, isLoading, error, isRefetching } = useDepartments();
 
   // Debug: Verificar qué está llegando
-  console.log('Departments data:', departments, 'Type:', typeof departments);
   return (
     <FadeInWhenVisible>
       <div className="gradient-background" id="departments">
